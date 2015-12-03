@@ -1,3 +1,3 @@
-exports = function expressPageHandler(mask, handler) {
+module.exports = function expressPageHandler(mask, handler) {
 	return {'mask': mask, 'handler': handler};
 };
