@@ -6,6 +6,7 @@ module.exports = function expressPageHandler() {
 		for (var i = 1; i < arguments.length-1; i++) {
 			middle.push(arguments[i]);
 		}
+		ret.middle = middle;
 	}
 	arguments.length >= 2 && (ret.handler = arguments[arguments.length-1]);
 	return ret;
